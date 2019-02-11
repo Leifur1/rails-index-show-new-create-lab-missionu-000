@@ -8,9 +8,12 @@ class CouponController < ApplicationController
   end
 
   def new
-    @coupons = Coupon.new
+    @coupon = Coupon.new
   end
 
   def create
+    @coupon = Coupon.new
+    @coupon.coupon_code = params[:coupon_code]
+    @coupon.store
   end
 end
