@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'coupon/index'
+
+  get 'coupon/show'
+
+  get 'coupon/new'
+
+  get 'coupon/create'
+
   get 'coupon/new'
 
   get 'coupon/index'
