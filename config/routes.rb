@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'coupon/new'
+
   get 'coupon/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
